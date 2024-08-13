@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(AirplaneBackground3.jpg)no-repeat center center fixed;
+    background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.menu h2{
+  color: #fff;
+}
+
+nav {
+    background : #1a1a1a;
+    width :100%;
+    padding:10px 10%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+ 
+ }
+ 
+ nav ul{
+    width:100%;
+     text-align:right;
+ }
+ nav ul li{
+ 
+     display:inline-block;
+     list-style:none;
+     margin:10px 20px;
+ 
+ }
+ 
+ nav ul li a{
+     color: #fff;
+     text-decoration: none;
+ }
+
+
+ .info{
+    width: 90%;
+    color:#fff ;
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 20%;
+    padding-left: 10%;
+  }
+ 
+
+  .info h1{
+
+    font-size: 62px;
+ 
+  }
+ 
+.info p{
+    padding-top: 25px;
+    padding-bottom: 25px;
+ 
+  }
+
+  .info button
+  {
+    font-size: 18px;
+    font-weight: bold;
+    background:transparent;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    color: #fff;
+    height: 40px;
+    margin-bottom: 30px;
+
+  }
+
+  button:hover
+  {
+    background: #f44336;
+    transition: 1s;
+  }
+ 
+
+   

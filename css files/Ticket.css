@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*
+{
+    margin: 0;
+	padding:0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+body {
+    background: url('ticketbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 3%;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 500;
+}
+input, select {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.511);
+    transition: all 0.3s ease;
+}
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    outline: none;
+    transform: scale(1.02);
+}
+input:hover{
+    border: 3px solid  #3d5cb8;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+.button {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+.button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+.menu{
+	width: 100%;
+	min-height: 100vh;
+  background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.menu h2{
+  color: #fff;
+}
+nav {
+    background : #1a1a1a;
+    width :100%;
+    padding:10px 10%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+ 
+ }
+ 
+ nav ul{
+    width:100%;
+     text-align:right;
+ }
+ nav ul li{
+ 
+     display:inline-block;
+     list-style:none;
+     margin:10px 20px;
+ 
+ }
+ 
+ nav ul li a{
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .popup
+ {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    
+ }
+
+ .open-popup
+ {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    
+    
+ }
+
+ .popup img
+ {
+width: 100px;
+margin-top: -50px;
+border-radius: 50px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .popup h2
+ {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: black;
+ }
+
+ .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .popup button:hover
+ {
+    background: linear-gradient(1deg, #00b32d, #00ff7b);
+    transform: scale(1.05);
+ }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    input, select, .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    input, select, .button {
+        font-size: 12px;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

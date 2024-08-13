@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: bold;
+    background: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(admin-img1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    margin-right: 2%;
+    
+}
+
+h1 {
+    margin-top: 12%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h2{
+    color: #f0f0f0;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff4f;
+   padding: 10px;
+}
+
+h2:hover
+{
+    transition: 0.3s;
+    transform: scaley(1.1);
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-row label {
+    flex: 0 0 auto;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.form-row input {
+    flex: 1 1 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-width: 150px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.form-row button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    background-color: #3d5cb8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-row button:hover {
+    background-color: #334c99;
+    transform: scale(1.05);
+}
+
+
+.deleteForm input {
+    flex: 1 1 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-width: 150px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.delete
+{
+  flex: 0 0 auto;
+    padding: 10px;
+   
+    background-color: rgba(255, 0, 0, 0.656);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 2%;
+}
+
+.delete:hover
+{
+    background:rgb(176, 17, 17);
+    transition: 1s;
+    transform: scale(1.05);
+   
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label, .form-row input, .form-row button {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .form-row label {
+        margin-right: 0;
+    }
+
+    .form-row button {
+        width: auto;
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .delete
+    {
+        width: auto;
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    body
+    {
+        margin-right: 5%;
+    }
+}
+
+
+/* Sidebar Styles */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3d5cb8;
+    padding-top: 20px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar-header {
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #3d5cb8;
+    font-size: 1.2rem;
+}
+
+.sidenav button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 5%;
+}
+
+.sidenav button:hover
+{
+    
+    transition: 1s;
+    transform: scale(1.20);
+    background-color: #334c99;
+    width: 100px;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 0;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}

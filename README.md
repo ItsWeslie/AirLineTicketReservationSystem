@@ -4,4 +4,3 @@ The project comprises two major modules: Admin and User. In the Admin module, th
 
 contact sam weslie prabhakaran p for further code through LinkedIn
 
-NOTE : codes are provided to only paid customers.
